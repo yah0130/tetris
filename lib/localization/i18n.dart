@@ -144,8 +144,4 @@ class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {
   bool shouldReload(GeneratedLocalizationsDelegate old) => false;
 }
 
-String getLang(Locale l) => l == null
-    ? null
-    : l.countryCode != null && l.countryCode.isEmpty
-        ? l.languageCode
-        : l.toString();
+String getLang(Locale l) => l == null ? null : l.languageCode;
