@@ -11,7 +11,7 @@ class LeftBand extends StatelessWidget {
         children: () {
           List<Widget> widgets = List<Widget>();
           widgets.add(Spacer(
-            flex: 3,
+            flex: 1,
           ));
           widgets.addAll(
               Block.fromType(BlockType.Z).rotate().shape.map((list) {

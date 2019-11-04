@@ -10,7 +10,7 @@ class RightBand extends StatelessWidget {
       child: Column(
         children: () {
           List<Widget> widgets = List<Widget>();
-          widgets.add(Spacer(flex: 3,));
+          widgets.add(Spacer(flex: 1,));
           widgets.addAll(
               Block.fromType(BlockType.S).rotate().shape.map((list) {
                 return Row(

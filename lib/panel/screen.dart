@@ -15,12 +15,12 @@ class Screen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final playerPanelWidth = width * 0.6;
+    final playerPanelWidth = (width - 6) * 0.6;
     return Material(
       color: SCREEN_BACKGROUND,
       child: SizedBox(
         height: (playerPanelWidth - 6) * 2 + 6,
-        width: width-1,
+        width: width - 6,
         child: Container(
           color: SCREEN_BACKGROUND,
           child: GameMaterial(
@@ -30,7 +30,7 @@ class Screen extends StatelessWidget {
                   children: <Widget>[
                     PlayPanel(width: playerPanelWidth),
                     SizedBox(
-                      width: width - playerPanelWidth-1,
+                      width: width - 6 - playerPanelWidth,
                       child: StatusPanel(),
                     )
                   ],

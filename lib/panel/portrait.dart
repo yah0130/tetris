@@ -26,13 +26,13 @@ class PagePortrait extends StatelessWidget {
             LeftBand(),
             Column(
               children: <Widget>[
-                Container(
-                  padding: EdgeInsets.only(top: 20),
-                  child: Text(
-                    S.of(context).title,
-                    style: TextStyle(fontSize: 25),
-                  ),
-                ),
+//                Container(
+//                  padding: EdgeInsets.only(top: 20),
+//                  child: Text(
+//                    S.of(context).title,
+//                    style: TextStyle(fontSize: 25),
+//                  ),
+//                ),
                 Spacer(),
                 Shake(
                     shake: GameState.of(context).states ==
